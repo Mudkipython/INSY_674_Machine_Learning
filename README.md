@@ -1,35 +1,30 @@
-# INSY 695: Enterprise Data Science & ML in Production I - Final Project
+# INSY 695 Final Project: Enterprise AI in the Global Coffee Supply Chain
 
 ## 📋 Project Overview
-This repository contains the final group project for **INSY 695** at the Desautels Faculty of Management. The objective is to implement a sustainable, scalable, and enterprise-grade Artificial Intelligence (AI) product by following the end-to-end data science lifecycle.
+This project applies enterprise-grade Machine Learning to the **Coffee Industry**, focusing on optimizing production and supply chain efficiency. By leveraging the end-to-end data science lifecycle, we aim to provide actionable insights into coffee variety performance, regional production trends, and market dynamics using SOTA supervised learning and causal inference.
 
 ## 🛠 Enterprise Tech Stack
-This project utilizes the mandated enterprise tools and frameworks:
-* **Cloud Infrastructure:** Microsoft Azure.
-* **Containerization:** Docker.
-* **Orchestration:** Kubernetes.
-* **Distributed Computing:** Databricks / Apache Spark.
-* **Development Environment:** PyCharm with Python Dev Tools (`pytest`, `black`, `mypy`, `flake8`).
-* **Machine Learning Stack:** * Core: Numpy, Scipy, Pandas, Scikit-Learn.
-    * Deep Learning: Keras, TensorFlow.
-    * AutoML: H2O.ai, TPOT, or AutoKeras.
-* **Governance & Explainability:** LIME and SHAP libraries.
-* **Causal Inference:** EconML.
+In accordance with the INSY 695 syllabus, our project utilizes:
+* **Cloud Infrastructure:** Microsoft Azure & Databricks (Apache Spark)
+* **Containerization:** Docker & Kubernetes for production deployment
+* **Modeling & SOTA ML:** * Supervised Learning (XGBoost/LightGBM) for production forecasting
+    * Deep Learning (TensorFlow/Keras) for quality classification
+    * AutoML (H2O.ai) for baseline benchmarking
+* **Explainability & Governance:** SHAP and LIME to interpret model drivers
+* **Causal Analytics:** EconML to evaluate the impact of environmental/economic factors on yield
+
+## 🏗 Project Architecture & Modules
+* **`/data`**: Raw coffee production, climate, and pricing datasets.
+* **`/notebooks`**: Comprehensive Databricks notebooks covering EDA, Feature Engineering (PCA/Dimensionality Reduction), and Model Training.
+* **`/src`**: Modular Python code for preprocessing and testing (`pytest`, `black`).
+* **`/docs`**: Analysis of coffee varieties (Arabica vs. Robusta) and regional infographics.
 
 
 
-## 🏗 Project Structure & Deliverables
-To meet the evaluation criteria, the repository is organized as follows:
-* `/data`: Contains the raw dataset in `.csv` or `.json` format.
-* `/notebooks`: Includes the Jupyter or Databricks notebook (`.ipynb` or `.dbc`) with code, diagrams, and markdown documentation.
-* `/submission`: Contains the exported HTML version of the notebook with results.
-* `README.md`: This file, documenting the project scope and team members.
-
-## 🚀 Reproducibility Requirements
-In accordance with course standards, all experiments must be reproducible:
-1. All data transformations, preparation, and modeling must be performed within the submitted notebook.
-2. All project activities must be logged in GitHub.
-3. The electronic submission must list all group members.
+## 🚀 Reproducibility & Best Practices
+* **Standardized Environment:** Fully reproducible via Docker containers.
+* **Data Integrity:** All transformations are documented within the provided Databricks `.dbc` files.
+* **Ethics & Transparency:** Implementation of SHAP values to ensure transparency in automated decision-making.
 
 ## 👥 Group Members
 * Yuyang Chen
@@ -38,10 +33,9 @@ In accordance with course standards, all experiments must be reproducible:
 * Zihan Xu
 * Ruihe Zhang
 
-## ⚖️ Grading
-This project accounts for **45%** of the final course grade:
-* **Final Presentation:** 15% (15-minute presentation + Q&A).
-* **Final Submission:** 30%.
+## ⚖️ Evaluation Framework
+* **Final Presentation (15%):** Business impact and technical architecture.
+* **Final Submission (30%):** Code quality, reproducibility, and enterprise-grade documentation.
 
 ---
-*This project adheres to the McGill University Code of Student Conduct and the Desautels Faculty of Management Honor Policy.*
+*This project is submitted to the Desautels Faculty of Management in fulfillment of the requirements for INSY 695.*
