@@ -33,9 +33,3 @@ In accordance with the INSY 695 syllabus, our project utilizes:
 * Zihan Xu
 * Ruihe Zhang
 
-## ⚖️ Evaluation Framework
-* **Final Presentation (15%):** Business impact and technical architecture.
-* **Final Submission (30%):** Code quality, reproducibility, and enterprise-grade documentation.
-
----
-*This project is submitted to the Desautels Faculty of Management in fulfillment of the requirements for INSY 695.*
